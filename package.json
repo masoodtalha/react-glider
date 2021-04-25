@@ -22,7 +22,8 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "prerelease": "npm run build",
-    "release": "auto shipit"
+    "release": "auto shipit",
+    "postinstall": "npm run build"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",
