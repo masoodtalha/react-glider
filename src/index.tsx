@@ -1,4 +1,4 @@
-import { react as React } from 'react';
+import React from 'react';
 import { useId } from '@reach/auto-id';
 
 // tslint:disable-next-line
