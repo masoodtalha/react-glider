@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { react as React } from 'react';
 import { useId } from '@reach/auto-id';
 
 // tslint:disable-next-line
@@ -182,7 +182,7 @@ export interface GliderMethods {
   scrollItem(slideIndex: string | number, isActuallyDotIndex?: boolean): void;
 }
 
-const GliderComponent = React.forwardRef(
+export const GliderComponent = React.forwardRef(
   (props: GliderProps, ref: React.Ref<GliderMethods>) => {
     const innerRef = React.useRef<HTMLDivElement>(null);
     const gliderRef = React.useRef<GliderMethods>();
@@ -315,4 +315,3 @@ const GliderComponent = React.forwardRef(
   }
 );
 
-export default GliderComponent;
